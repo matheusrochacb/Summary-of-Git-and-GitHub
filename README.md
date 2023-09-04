@@ -113,6 +113,11 @@ git checkout -b <name-of-the-branch>
 Important:
 - The changes in the current branch must be committed or stashed before switching.
 - The branch should exist in the local.
+### Git restore
+A command for discarding changes in working directory.
+```
+git restore <file>
+```
 ### .gitignore
 - A command for writing into the .gitignore file.
 ```
@@ -125,4 +130,40 @@ echo <directory-name>/ >> .gitignore
 - A command for removing the directory from the .gitignore file.
 ```
 echo > .gitignore
+```
+### Removing Git repository
+A command for removing initialized Git repository in local
+```
+rm -rf .git
+```
+### Modifying commit message
+A command for modifying the message from the last commit.
+```
+git commit --amend -m "message"
+```
+### Restoring commit
+A command for restoring a previous version of commits.
+- Soft: Files are rolled back to staged. Ready to be commited.
+```
+git reset --soft <hash-code>
+```
+- Mixed (default): Files are rolled back to untracked/unstaged. Necessary to use git add to include in  what will be commited.
+```
+git reset --mixed <hash-code>
+or
+git reset
+```
+- Hard: Fles are removed completely.
+```
+git reset --hard <hash-code>
+```
+### Removing a file
+A command for removing a file.
+```
+git reset <file>
+```
+### Unstaging a file
+A command for unstaging a file.
+```
+git restore --staged <file>
 ```
