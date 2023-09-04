@@ -167,3 +167,8 @@ A command for unstaging a file.
 ```
 git restore --staged <file>
 ```
+### Adding a remote repository
+A command for adding a remote repository in Git.
+```
+git remote add <name> <URL>
+```
