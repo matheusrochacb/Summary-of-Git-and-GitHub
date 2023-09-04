@@ -113,3 +113,16 @@ git checkout -b <name-of-the-branch>
 Important:
 - The changes in the current branch must be committed or stashed before switching.
 - The branch should exist in the local.
+### .gitignore
+- A command for writing into the .gitignore file.
+```
+echo <directory-name>/ > .gitignore
+```
+- A command for appending into the .gitignore file.
+```
+echo <directory-name>/ >> .gitignore
+```
+- A command for removing the directory from the .gitignore file.
+```
+echo > .gitignore
+```
